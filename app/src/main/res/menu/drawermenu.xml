@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_qu"
+        android:title="Weekly Quiz"
+        android:icon="@mipmap/cmicon"/>
+    <item
+        android:id="@+id/action_cg"
+        android:title="CGPA Calculator"
+        android:icon="@mipmap/resulticon"/>
+
+    <item
+        android:id="@+id/action_ga"
+        android:title="Photo Gallery"
+        android:icon="@mipmap/galicon"/>
+
+    <item
+        android:id="@+id/action_map"
+        android:title="Campus Map"
+        android:icon="@mipmap/mapicon"/>
+
+    <item
+        android:id="@+id/action_news"
+        android:title="News"
+        android:icon="@drawable/whatshoticon"/>
+
+    <item
+        android:id="@+id/action_events"
+        android:title="Events"
+        android:icon="@drawable/eventicon"/>
+    <item
+        android:id="@+id/action_sports"
+        android:title="Sports"
+        android:icon="@drawable/sports"/>
+
+
+
+    <item android:title="Tracking">
+        <menu>
+            <item
+                android:id="@+id/action_track"
+                android:icon="@drawable/locationicon"
+                android:title="Track"/>
+        </menu>
+    </item>
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/action_suggest"
+                android:icon="@mipmap/suggesticon"
+                android:title="Suggestions"/>
+            <item
+                android:id="@+id/action_share"
+                android:icon="@mipmap/shareicon"
+                android:title="Share" />
+            <item
+                android:id="@+id/action_rate"
+                android:icon="@mipmap/star"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/action_developer"
+                android:icon="@mipmap/heart"
+                android:title="Developer"/>
+        </menu>
+    </item>
+
+</menu>

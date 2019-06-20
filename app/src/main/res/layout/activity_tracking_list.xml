@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrackingList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orangedark"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginLeft="56dp"
+            android:text="LIVE TRACKING"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/mycir"
+            android:background="@color/orangelight"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="My Circle"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/joincir"
+            android:background="@color/orangelight"
+            android:layout_marginTop="25dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Join Circle"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/joinedcir"
+            android:background="@color/orangelight"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Joined Circle"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/invitebut"
+            android:background="@color/orangelight"
+            android:layout_marginTop="25dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Invite Friends"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/sharebut"
+            android:background="@color/orangelight"
+            android:layout_marginTop="25dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Share on Whatsapp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

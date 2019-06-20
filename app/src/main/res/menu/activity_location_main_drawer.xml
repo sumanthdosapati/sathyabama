@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_joincir"
+            android:title="Join Circle" />
+        <item
+            android:id="@+id/nav_mycir"
+            android:title="My Circle" />
+        <item
+            android:id="@+id/nav_joinedcir"
+            android:title="Joined Circle" />
+        <item
+            android:id="@+id/nav_invitecir"
+            android:title="Invite Friends" />
+        <item
+            android:id="@+id/nav_sharecir"
+            android:title="Share Location" />
+    </group>
+
+
+
+</menu>

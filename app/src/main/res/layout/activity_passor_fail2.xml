@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PassorFail2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/th"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fo"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What are you thinking of your result...!"
+        android:textSize="23dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/orangelight"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PASS"
+        android:textSize="43dp"
+        android:layout_marginTop="65dp"
+        android:textAlignment="center"
+        android:textColor="@color/orangelight"/>
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pass"
+        android:id="@+id/ok2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAIL"
+        android:textSize="43dp"
+        android:layout_marginTop="330dp"
+        android:textAlignment="center"
+        android:textColor="@color/orangelight"/>
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="385dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fail"
+        android:id="@+id/notok2"/>
+</RelativeLayout>

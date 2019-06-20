@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdCSE"
+    android:background="#FFE0B2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEM 5"
+        android:id="@+id/sem5"
+        android:textSize="25dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+<ScrollView
+    android:layout_width="194dp"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:id="@+id/leftscroll"
+    android:layout_below="@+id/sem5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/left">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="1dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/orangebackground"
+        android:id="@+id/leftcard1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject 1"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/orangelight"
+            android:textSize="20dp"
+            android:layout_marginLeft="45dp"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:text="chapter 1"
+            android:background="@null"
+            android:textColor="@color/orangelight"
+            android:onClick="s1"/>
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:background="@null"
+            android:textColor="@color/orangelight"
+            android:text="chapter 2"
+            android:onClick="s2"/>
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:background="@null"
+            android:textColor="@color/orangelight"
+            android:text="chapter 3"
+            android:onClick="s3"/>
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:background="@null"
+            android:textColor="@color/orangelight"
+            android:text="chapter 4"
+            android:onClick="s4"/>
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button5"
+            android:background="@null"
+            android:textColor="@color/orangelight"
+            android:text="chapter 5"
+            android:onClick="s5"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/orangebackground"
+            android:id="@+id/leftcard2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subject 2"
+                        android:textColor="@color/orangelight"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="45dp"/>
+
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button11"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:text="chapter 1"
+                        android:onClick="s1"/>
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button22"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:text="chapter 2"
+                        android:onClick="s2"/>
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button33"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:text="chapter 3"
+                        android:onClick="s3"/>
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button44"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:text="chapter 4"
+                        android:onClick="s4"/>
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button55"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:text="chapter 5"
+                        android:onClick="s5"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="1dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/leftcard3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subject 3"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="45dp"/>
+
+                <Button
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button111"
+                    android:text="chapter 1"
+                    android:onClick="s1"/>
+                <Button
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button222"
+                    android:text="chapter 2"
+                    android:onClick="s2"/>
+                <Button
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button333"
+                    android:text="chapter 3"
+                    android:onClick="s3"/>
+                <Button
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button444"
+                    android:text="chapter 4"
+                    android:onClick="s4"/>
+                <Button
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button555"
+                    android:text="chapter 5"
+                    android:onClick="s5"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+<View
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_marginLeft="193dp"
+    android:id="@+id/view"
+    />
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEM 6"
+        android:id="@+id/sem6"
+        android:textSize="25dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+    <ScrollView
+        android:layout_width="194dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/view"
+        android:scrollbars="none"
+        android:layout_below="@+id/sem6">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="1dp"
+            app:cardBackgroundColor="@color/orangebackground"
+            android:layout_marginRight="1dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Machine Learning"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/orangelight"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="45dp"/>
+
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ml1"
+                        android:text="chapter 1"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:onClick="ml1"/>
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ml2"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:text="chapter 2"
+                        android:onClick="ml2"/>
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ml3"
+                        android:text="chapter 3"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:onClick="ml3"/>
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ml4"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:text="chapter 4"
+                        android:onClick="ml4"/>
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ml5"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:text="chapter 5"
+                        android:onClick="ml5"/>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="1dp"
+            app:cardBackgroundColor="@color/orangebackground"
+            android:layout_marginRight="1dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Network Security"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/orangelight"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="45dp"/>
+
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ns1"
+                        android:text="chapter 1"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:onClick="ns1"/>
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ns2"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:text="chapter 2"
+                        android:onClick="ns2"/>
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ns3"
+                        android:text="chapter 3"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:onClick="ns3"/>
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ns4"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:text="chapter 4"
+                        android:onClick="ns4"/>
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ns5"
+                        android:background="@null"
+                        android:textColor="@color/orangelight"
+                        android:text="chapter 5"
+                        android:onClick="ns5"/>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+           <android.support.v7.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="1dp"
+               android:layout_marginBottom="1dp"
+               app:cardBackgroundColor="@color/orangebackground"
+               android:layout_marginRight="1dp"
+               app:cardCornerRadius="10dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical"
+                       android:padding="10dp">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Data Mining"
+                           android:textStyle="bold"
+                           android:textAllCaps="true"
+                           android:textColor="@color/orangelight"
+                           android:textSize="20dp"
+                           android:layout_marginLeft="45dp"/>
+
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/dm1"
+                           android:text="chapter 1"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:onClick="dm1"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/dm2"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:text="chapter 2"
+                           android:onClick="dm2"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/dm3"
+                           android:text="chapter 3"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:onClick="dm3"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/dm4"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:text="chapter 4"
+                           android:onClick="dm4"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/dm5"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:text="chapter 5"
+                           android:onClick="dm5"/>
+
+                   </LinearLayout>
+               </RelativeLayout>
+           </android.support.v7.widget.CardView>
+
+           <android.support.v7.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="1dp"
+               android:layout_marginBottom="1dp"
+               app:cardBackgroundColor="@color/orangebackground"
+               android:layout_marginRight="1dp"
+               app:cardCornerRadius="10dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical"
+                       android:padding="10dp">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Cloud Computing"
+                           android:textStyle="bold"
+                           android:textAllCaps="true"
+                           android:textColor="@color/orangelight"
+                           android:textSize="20dp"
+                           android:layout_marginLeft="45dp"/>
+
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/cc1"
+                           android:text="chapter 1"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:onClick="cc1"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/cc2"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:text="chapter 2"
+                           android:onClick="cc2"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/cc3"
+                           android:text="chapter 3"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:onClick="cc3"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/cc4"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:text="chapter 4"
+                           android:onClick="cc4"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/cc5"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:text="chapter 5"
+                           android:onClick="cc5"/>
+
+                   </LinearLayout>
+               </RelativeLayout>
+           </android.support.v7.widget.CardView>
+
+           <android.support.v7.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="1dp"
+               android:layout_marginBottom="1dp"
+               app:cardBackgroundColor="@color/orangebackground"
+               android:layout_marginRight="1dp"
+               app:cardCornerRadius="10dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical"
+                       android:padding="10dp">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="O.O.Analysis nd Design"
+                           android:textStyle="bold"
+                           android:textAllCaps="true"
+                           android:textColor="@color/orangelight"
+                           android:textSize="20dp"
+                           android:layout_marginLeft="45dp"/>
+
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/oo1"
+                           android:text="chapter 1"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:onClick="oo1"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/oo2"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:text="chapter 2"
+                           android:onClick="oo2"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/oo3"
+                           android:text="chapter 3"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:onClick="oo3"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/oo4"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:text="chapter 4"
+                           android:onClick="oo4"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/oo5"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:text="chapter 5"
+                           android:onClick="oo5"/>
+
+                   </LinearLayout>
+               </RelativeLayout>
+           </android.support.v7.widget.CardView>
+
+           <android.support.v7.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="1dp"
+               android:layout_marginBottom="1dp"
+               app:cardBackgroundColor="@color/orangebackground"
+               android:layout_marginRight="1dp"
+               app:cardCornerRadius="10dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical"
+                       android:padding="10dp">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Python"
+                           android:textStyle="bold"
+                           android:textAllCaps="true"
+                           android:textColor="@color/orangelight"
+                           android:textSize="20dp"
+                           android:layout_marginLeft="45dp"/>
+
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/p1"
+                           android:text="chapter 1"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:onClick="p1"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/p2"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:text="chapter 2"
+                           android:onClick="p2"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/p3"
+                           android:text="chapter 3"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:onClick="p3"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/p4"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:text="chapter 4"
+                           android:onClick="p4"/>
+                       <Button
+                           android:layout_width="170dp"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/p5"
+                           android:background="@null"
+                           android:textColor="@color/orangelight"
+                           android:text="chapter 5"
+                           android:onClick="p5"/>
+
+
+                   </LinearLayout>
+               </RelativeLayout>
+           </android.support.v7.widget.CardView>
+
+
+       </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

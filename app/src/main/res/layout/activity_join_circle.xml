@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinCircle">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orangelight"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textSize="21dp"
+        android:text="Enter the 6 digit code of the bus to track"/>
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pinview"
+        app:pinBackground="@color/orangelight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:pinWidth="40dp"
+        app:pinHeight="40dp"
+        app:pinLength="6"
+        app:cursorVisible="false"
+        app:forceKeyboard="true"
+        app:hint="0"
+        app:inputType="number"
+        app:password="false"/>
+
+    <Button
+        android:id="@+id/trackbut"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Track"
+        android:textColor="@color/white"
+        android:background="@color/orangelight"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

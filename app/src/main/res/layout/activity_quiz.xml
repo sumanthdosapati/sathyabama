@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orangedark"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:text="Quiz"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:id="@+id/questiontxt"
+            android:textColor="@color/orangelight"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:text="This is question"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/opt1"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/orangelight"
+                android:text="option1"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/opt2"
+                android:layout_weight="1"
+                android:background="@color/orangelight"
+                android:text="option2"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/opt3"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/orangelight"
+                android:text="option3"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/opt4"
+                android:layout_weight="1"
+                android:background="@color/orangelight"
+                android:text="option4"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timertxt"
+                android:textSize="28sp"
+                android:textColor="@color/orangelight"
+                android:textAlignment="center"
+                android:text="00:00"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

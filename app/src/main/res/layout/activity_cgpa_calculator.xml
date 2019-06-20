@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CGPA_calculator"
+    android:background="#000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CGPA Calculator"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:textSize="35dp"
+        android:id="@+id/headingcgpa"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/headingcgpa"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the 6 subjects Points"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:textStyle="italic"/>
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/sub1"
+        app:pinBackground="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:pinWidth="40dp"
+        app:pinHeight="40dp"
+        app:pinLength="2"
+        app:cursorVisible="false"
+        app:forceKeyboard="true"
+        app:hint="0"
+        app:inputType="number"
+        app:password="false"/>
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/sub2"
+            app:pinBackground="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:pinWidth="40dp"
+            app:pinHeight="40dp"
+            app:pinLength="2"
+            app:cursorVisible="false"
+            app:forceKeyboard="true"
+            app:hint="0"
+            app:inputType="number"
+            app:password="false"/>
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/sub3"
+            app:pinBackground="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:pinWidth="40dp"
+            app:pinHeight="40dp"
+            app:pinLength="2"
+            app:cursorVisible="false"
+            app:forceKeyboard="true"
+            app:hint="0"
+            app:inputType="number"
+            app:password="false"/>
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/sub4"
+            app:pinBackground="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:pinWidth="40dp"
+            app:pinHeight="40dp"
+            app:pinLength="2"
+            app:cursorVisible="false"
+            app:forceKeyboard="true"
+            app:hint="0"
+            app:inputType="number"
+            app:password="false"/>
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/sub5"
+            app:pinBackground="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:pinWidth="40dp"
+            app:pinHeight="40dp"
+            app:pinLength="2"
+            app:cursorVisible="false"
+            app:forceKeyboard="true"
+            app:hint="0"
+            app:inputType="number"
+            app:password="false"/>
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/sub6"
+            app:pinBackground="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:pinWidth="40dp"
+            app:pinHeight="40dp"
+            app:pinLength="2"
+            app:cursorVisible="false"
+            app:forceKeyboard="true"
+            app:hint="0"
+            app:inputType="number"
+            app:password="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:id="@+id/cgparesult"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:id="@+id/calculatebtn"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:background="@color/black"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

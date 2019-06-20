@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orangelight"
+    tools:context=".Suggestions">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    app:cardBackgroundColor="@color/orangebackground">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/suggestion"
+        android:background="@null"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Describe your suggestion ..."
+        android:textColor="@color/orangedark"
+        android:textColorHint="@color/orangelight"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:id="@+id/reportext"/>
+
+    <com.bernaferrari.emojislider.EmojiSlider
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        app:average_progress="0.90"
+        app:particle_direction="up"
+        android:layout_below="@+id/reportext"
+        android:padding="72dp" />
+
+    <View
+        android:id="@+id/slider_particle_system"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Send"
+        android:background="@null"
+        android:id="@+id/suggestbutton"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/orangelight"/>
+</RelativeLayout>
+</android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/orangelight">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@color/orangebackground">
+
+
+    <com.github.glomadrian.grav.GravView
+        android:id="@+id/grav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:colorGenerator="com.github.glomadrian.grav.generator.paint.ArrayColorGenerator"
+        app:array_colors="@array/red"
+        app:pointGenerator="com.github.glomadrian.grav.generator.point.RegularPointGenerator"
+        app:regular_cell_size="300"
+        app:regular_variance="200"
+        app:gravGenerator="com.github.glomadrian.grav.generator.grav.BallGenerator"
+        app:ball_from_size="7dp"
+        app:ball_to_size="16dp"
+        app:animationGenerators="@array/BubbleAnimations"
+        app:side_to_side_min_duration="10000"
+        app:side_to_side_max_duration="10000"
+        app:side_to_side_direction="leftToRight"
+        app:shake_direction="vertical"
+        app:shake_min_duration="10000"
+        app:shake_max_duration="20000"
+        app:shake_variance="500dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sathyabama"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_below="@+id/logo"
+            android:textSize="25dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/orangedark"
+            android:id="@+id/userview"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/userview"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/logo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/useredit" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password "
+            android:id="@+id/passview"
+            android:layout_below="@+id/userview"
+            android:textSize="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/orangedark"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passedit"
+            android:layout_toRightOf="@+id/passview"
+            android:layout_below="@+id/userview"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:inputType="textWebPassword"
+            android:focusableInTouchMode="true"
+            />
+
+        <Button
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:layout_centerHorizontal="true"
+            android:text="Login"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/clibutton"
+            android:textColor="#FAFAFA"
+            android:backgroundTint="@color/orangedark"
+            android:onClick="login"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forpass"
+            android:text="forgot password?"
+            android:layout_below="@+id/clibutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:textColor="@color/orangelight"
+            android:background="@null"
+            android:clickable="true"
+            android:onClick="forgotbutton"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register"
+            android:text="Don't have an account yet ?"
+            android:layout_below="@+id/forpass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:textColor="@color/orangelight"
+            android:background="@null"
+            android:clickable="true"
+            android:onClick="regbutton"
+            />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Staff Login"
+            android:textColor="@color/orangelight"
+            android:textSize="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="7dp"
+            android:clickable="true"
+            android:id="@+id/staff"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

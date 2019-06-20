@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageButton
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:id="@+id/imageBtn"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        android:layout_marginLeft="100dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:hint="Post Title"
+        android:inputType="text"
+        android:layout_marginLeft="16dp"
+        android:maxLines="1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDescription"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:hint="Post Description"
+        android:inputType="text"
+        android:layout_marginLeft="16dp"
+        android:maxLines="3"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="post"
+        android:id="@+id/postBtn"/>
+
+</LinearLayout>

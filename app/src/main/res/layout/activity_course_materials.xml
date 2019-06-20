@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseMaterials"
+    android:background="@color/orangelight">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="@color/orangebackground">
+
+
+
+        <com.sdsmdg.harjot.longshadows.LongShadowsWrapper
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/orangebackground">
+    <com.sdsmdg.harjot.longshadows.LongShadowsImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/heading"
+        android:src="@drawable/cmtext"
+        app:shadow_startColor="@color/orangelight"
+        app:shadow_angle="55"
+        app:shadow_length="200"/>
+        </com.sdsmdg.harjot.longshadows.LongShadowsWrapper>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_below="@+id/heading"
+    android:layout_marginTop="98dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/first"
+        android:layout_marginTop="3dp">
+
+        <RadioGroup
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_alignParentTop="true" >
+
+            <RadioButton
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="1"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/second"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="90dp">
+
+        <RadioGroup
+            android:id="@+id/dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+
+            <RadioButton
+                android:id="@+id/cse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="cse"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/ece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ece"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/mech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mechanical"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="it"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/civil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="civil"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/eee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eee"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="automobile"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:textColor="#fff"
+        android:background="@color/orangelight"
+       android:layout_marginTop="450dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

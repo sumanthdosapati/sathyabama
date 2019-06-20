@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "730850141007",
+    "firebase_url": "https://sathyabama-testing.firebaseio.com",
+    "project_id": "sathyabama-testing",
+    "storage_bucket": "sathyabama-testing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730850141007:android:1b64279e59af82e0",
+        "android_client_info": {
+          "package_name": "com.example.sumanth.sathyabama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730850141007-gnfcjooqg4r86lp10r6qkmg02htpj3rl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sumanth.sathyabama",
+            "certificate_hash": "50edb6469f294b24903882a48d775df93188f903"
+          }
+        },
+        {
+          "client_id": "730850141007-a31dpil9mga83m9ksb0rst7mi2bn9i2u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLnJQze8wCp4Snaycp7S_jqETT6hrZg7o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730850141007-a31dpil9mga83m9ksb0rst7mi2bn9i2u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

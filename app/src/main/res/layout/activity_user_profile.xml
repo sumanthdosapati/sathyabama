@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserProfile"
+    android:background="@drawable/orangegradientlight">
+
+        <com.github.glomadrian.grav.GravView
+            android:id="@+id/grav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:colorGenerator="com.github.glomadrian.grav.generator.paint.ArrayColorGenerator"
+            app:array_colors="@array/red"
+            app:pointGenerator="com.github.glomadrian.grav.generator.point.RegularPointGenerator"
+            app:regular_cell_size="300"
+            app:regular_variance="200"
+            app:gravGenerator="com.github.glomadrian.grav.generator.grav.BallGenerator"
+            app:ball_from_size="7dp"
+            app:ball_to_size="16dp"
+            app:animationGenerators="@array/BubbleAnimations"
+            app:side_to_side_min_duration="10000"
+            app:side_to_side_max_duration="10000"
+            app:side_to_side_direction="leftToRight"
+            app:shake_direction="vertical"
+            app:shake_min_duration="10000"
+            app:shake_max_duration="20000"
+            app:shake_variance="500dp"
+            />
+
+    <LinearLayout
+        android:background="@drawable/orangegradientlight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/toppart"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textAlignment="center"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/orangelight"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="45dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/userproimage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@null"
+            android:src="@drawable/ic_menu_gallery"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userproname"
+            android:text="Loading..."
+            android:textAllCaps="true"
+            android:textColor="@color/orangelight"
+            android:textStyle="bold"
+            android:textSize="31sp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/threenumber"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userproregno"
+                android:textColor="@color/orangelight"
+                android:paddingLeft="20dp"
+                android:text="loading..."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/dob"/>
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/userprodob"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orangelight"
+                android:paddingLeft="20dp"
+                android:text="**/**/****"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@mipmap/email"/>
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/userpromail"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textColor="@color/orangelight"
+                android:text="loading..."/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

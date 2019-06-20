@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchBox">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/codetext"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/search"
+        android:hint="Enter Subject Code"
+        android:textColor="@color/orangelight"
+        android:textColorHint="@color/orangelight"
+        android:layout_marginLeft="20dp"
+        android:textAllCaps="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Search"
+        android:textStyle="bold"
+        android:textColor="@color/orangelight"
+        android:id="@+id/searchbtn"
+        android:layout_below="@+id/search"/>
+
+</RelativeLayout>

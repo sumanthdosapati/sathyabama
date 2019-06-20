@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Developer"
+    android:background="@color/orangelight">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        app:cardCornerRadius="2dp">
+
+        <com.github.glomadrian.grav.GravView
+            android:id="@+id/grav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:colorGenerator="com.github.glomadrian.grav.generator.paint.ArrayColorGenerator"
+            app:array_colors="@array/red"
+            app:pointGenerator="com.github.glomadrian.grav.generator.point.RegularPointGenerator"
+            app:regular_cell_size="100"
+            app:regular_variance="200"
+            app:gravGenerator="com.github.glomadrian.grav.generator.grav.RectangleGenerator"
+            app:rectangle_width="15dp"
+            app:rectangle_height="2dp"
+            app:animationGenerators="@array/FalconAnimations"
+            app:side_to_side_min_duration="400"
+            app:side_to_side_max_duration="800"
+            app:side_to_side_direction="rightToLeft"
+            app:shake_variance="5dp"
+            app:shake_direction="vertical"
+            />
+
+        <ru.github.igla.ferriswheel.FerrisWheelView
+            android:id="@+id/ferrisWheelView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            app:fwv_wheelStrokeColor="#87cefa"
+            app:fwv_baseStrokeColor="@color/orangebackground"
+            app:fwv_cabinsNumber="8"
+            app:fwv_rotateSpeed="10" />
+
+    <yanzhikai.textpath.SyncTextPathView
+        android:id="@+id/sumanth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:duration="5000"
+        app:showPainter="true"
+        app:text="SUMANTH"
+        app:showPainterActually="true"
+        app:repeat="REVERSE"
+        android:layout_marginTop="600dp"
+        app:textInCenter="true"
+        app:textSize="60sp"
+        android:layout_weight="1"
+        />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

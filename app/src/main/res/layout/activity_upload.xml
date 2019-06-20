@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Upload"
+    android:background="@color/orangelight">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="@color/orangebackground">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/headertext"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/orangelight"
+                android:textSize="40dp"
+                android:text="Enter Post Details"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/postnameedit"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:hint="Post Title"
+                android:textAllCaps="true"
+                android:inputType="text"
+                android:layout_marginLeft="16dp"
+                android:maxLines="1"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/postdescriptionedit"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:hint="Post Description"
+                android:inputType="text"
+                android:layout_marginLeft="16dp"
+                android:maxLines="3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/postsenderedit"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:text="sent by"
+                android:visibility="gone"
+                android:inputType="none"
+                android:layout_marginLeft="16dp"
+                android:maxLines="3"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="85dp">
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chooseimagebtn"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:background="@color/orangelight"
+                    android:text="Choose Image"/>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/chooseimageview"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="200dp"
+                android:background="@color/orangelight"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/uploadbtn"
+                android:text="Upload"/>
+
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/progressbar"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+</RelativeLayout>
+    </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
