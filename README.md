@@ -6,12 +6,12 @@ I developed this using Android Studio in Java with Google firebase as realtime d
 
 ### Features
 * Course Materials
+* NewsFeed & Posts
 * Results
 * Student Portal
 * Parents Login
 * Live Chat
 * Student Profile
-* NewsFeed & Posts
 * Events,Sports
 * CGPA calculator
 * Campus News
